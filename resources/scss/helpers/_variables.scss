@@ -1,0 +1,34 @@
+//colors
+
+$black: #000;
+$white: #FFF;
+$offblue: #E5F9FF;
+$offgrey: #D7D7D7;
+$green: #25c281;
+$greyshade1: #F8F8F8;
+$greyshade2: #E0E0E0;
+$greyshade3: #4d4d4d;
+$greyshade4: #B8B8B8;
+$orange: #EF8D24;
+$green: #25c281;
+$green1: #5bbc2e;
+$blue: #3ea1ec;
+$skyblue: #24b3b5;
+$greyshade5: #ededed;
+
+//font-size
+
+$fontsize24: 1.5vw;
+$fontsize22: 22px;
+$fontsize20: 20px;
+$fontsize18: 3vw;
+$fontsize15: 15px;
+$calc-font-size: calc(1em + 1vmin);
+
+//variables
+$colorVar: color;
+$fontVar: font !default;
+$arr: a, b, c;
+$arrInMultiple: (cat, mow), (dog, bark), (lion, roar);
+$arrToMap: ("header-color": $green, "body-color": $blue, "footer-color": $skyblue);
+

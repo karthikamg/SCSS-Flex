@@ -1,0 +1,56 @@
+@import '_variables', '_mixins';
+
+body{
+	#{$colorVar}: $greyshade3;
+	#{$fontVar}-size: $calc-font-size;
+	margin: 0 auto;
+	header {
+		background-#{$colorVar}: $skyblue;
+		#{$colorVar}: $white;
+		#{$fontVar}-weight: bold;
+		padding: 2% 0;
+		text-align: center;
+		width: 100%;
+	}
+	main {
+		border: 1px solid $skyblue;
+		min-height: 500px;
+		margin: 30px 25px;
+		padding: 2%;
+	}
+	footer {
+		text-align: center;
+	}
+	ul{
+		li{
+			list-style-type: circle;
+			line-height: 2;
+		}
+	}
+	.no-display{
+		display: none;
+		width: remy(360px);
+	}
+	.block-display{
+		display: block;
+		@include testLoop(2);
+	}
+	@for $i from 1 through 3 {
+		.span-#{$i} {width: $i;}
+	}
+	@each $val in $arr {
+		.p-#{$val} { #{$colorVar}: grey; }
+	}
+	@each $key, $val in $arrInMultiple {
+		.#{$key}-#{$val} {
+			content: $key;
+			background-image: url('/images/#{$val}.png');
+		}
+	}
+	@each $key, $val in $arrInMultiple {
+		p.sample-#{$key} {
+			#{$fontVar}-weight: bold;
+			@include setColor();
+		}
+	}
+}

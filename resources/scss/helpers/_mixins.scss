@@ -1,0 +1,24 @@
+@mixin size($width: 100%, $height: auto){
+	width: $width;
+	height: $height;
+	overflow-x: hidden;
+}
+@mixin setColor($color: $green) {
+	@if(lightness($color) > 50%) {
+		font-size: 15px;
+	} @else {
+		font-size: 16px;
+	}
+}
+@function remy($value, $base: 16px) {
+	@return ($value / $base) * 1rem;
+}
+@mixin testLoop($testVar) {
+	@if $testVar == 1 {
+		width: 15px;
+	} @else if $testVar == 2 {
+		border: 1px solid;
+	} @else {
+		height: 20px;
+	}
+}

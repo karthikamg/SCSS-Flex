@@ -1,0 +1,95 @@
+/* line 3, ../resources/scss/helpers/_base.scss */
+body {
+  color: #4d4d4d;
+  font-size: calc(1em + 1vmin);
+  margin: 0 auto;
+}
+/* line 7, ../resources/scss/helpers/_base.scss */
+body header {
+  background-color: #24b3b5;
+  color: #FFF;
+  font-weight: bold;
+  padding: 2% 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 15, ../resources/scss/helpers/_base.scss */
+body main {
+  border: 1px solid #24b3b5;
+  min-height: 500px;
+  margin: 30px 25px;
+  padding: 2%;
+}
+/* line 21, ../resources/scss/helpers/_base.scss */
+body footer {
+  text-align: center;
+}
+/* line 25, ../resources/scss/helpers/_base.scss */
+body ul li {
+  list-style-type: circle;
+  line-height: 2;
+}
+/* line 30, ../resources/scss/helpers/_base.scss */
+body .no-display {
+  display: none;
+  width: 22.5rem;
+}
+/* line 34, ../resources/scss/helpers/_base.scss */
+body .block-display {
+  display: block;
+  border: 1px solid;
+}
+/* line 39, ../resources/scss/helpers/_base.scss */
+body .span-1 {
+  width: 1;
+}
+/* line 39, ../resources/scss/helpers/_base.scss */
+body .span-2 {
+  width: 2;
+}
+/* line 39, ../resources/scss/helpers/_base.scss */
+body .span-3 {
+  width: 3;
+}
+/* line 42, ../resources/scss/helpers/_base.scss */
+body .p-a {
+  color: grey;
+}
+/* line 42, ../resources/scss/helpers/_base.scss */
+body .p-b {
+  color: grey;
+}
+/* line 42, ../resources/scss/helpers/_base.scss */
+body .p-c {
+  color: grey;
+}
+/* line 45, ../resources/scss/helpers/_base.scss */
+body .cat-mow {
+  content: cat;
+  background-image: url("/images/mow.png");
+}
+/* line 45, ../resources/scss/helpers/_base.scss */
+body .dog-bark {
+  content: dog;
+  background-image: url("/images/bark.png");
+}
+/* line 45, ../resources/scss/helpers/_base.scss */
+body .lion-roar {
+  content: lion;
+  background-image: url("/images/roar.png");
+}
+/* line 51, ../resources/scss/helpers/_base.scss */
+body p.sample-cat {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 51, ../resources/scss/helpers/_base.scss */
+body p.sample-dog {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 51, ../resources/scss/helpers/_base.scss */
+body p.sample-lion {
+  font-weight: bold;
+  font-size: 16px;
+}
