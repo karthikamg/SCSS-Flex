@@ -8,15 +8,51 @@
 <body>
 	<header>Learning Advanced SCSS</header>
 	<main>
-		<ul>
-			<li>
-				<a href="https://gist.github.com/jareware/4738651" target="_blank">16 cool things you may not have known your stylesheets could do</a>
-			</li>
-			<li>
-				<a href="http://thesassway.com/advanced" target="_blank">Advanced SCSS Topics</a>
-			</li>
-		</ul>
+		<div id="side-content">
+			<div>Menu</div>
+			<ul>
+				<li>Dashboard</li>
+				<li>Advanced SCSS</li>
+				<li>Flexbox properties</li>
+			</ul>
+		</div>
+		<div id="main-content">
+			<ul>
+				<li>
+					<a href="https://gist.github.com/jareware/4738651" target="_blank">16 cool things you may not have known your stylesheets could do</a>
+				</li>
+				<li>
+					<a href="http://thesassway.com/advanced" target="_blank">Advanced SCSS Topics</a>
+				</li>
+				<li>
+					<a href="https://tympanus.net/codrops/css_reference/flexbox/#section_justify-content" target="_blank">Flex box tutorial</a>
+				</li>
+			</ul>
+			<div id="flex-container">
+				<div class="flex-child">Java</div>
+				<div class="flex-child">Angular</div>
+				<div class="flex-child">React</div>
+				<div class="flex-child">Backbone</div>
+				<div class="flex-child">Foundation</div>
+				<div class="flex-child">Compass</div>
+				<div class="flex-child">Java</div>
+				<div class="flex-child">Angular</div>
+				<div class="flex-child">React</div>
+				<div class="flex-child">Backbone</div>
+				<div class="flex-child">Foundation</div>
+				<div class="flex-child">Compass</div>
+			</div>
+		</div>
 	</main>
 	<footer>@Copyright reserved.</footer>
+	<script type="text/javascript">
+		$(function(){
+			var flexWidth = 0;
+			$('.flex-child').each(function() {
+			    flexWidth += $(this).outerWidth( true );
+			});
+			$('#flex-container').css('width', flexWidth);
+		});
+	</script>
 </body>
 </html>

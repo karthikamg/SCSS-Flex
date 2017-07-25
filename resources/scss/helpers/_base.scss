@@ -1,6 +1,6 @@
 @import '_variables', '_mixins';
 
-body{
+body {
 	#{$colorVar}: $greyshade3;
 	#{$fontVar}-size: $calc-font-size;
 	margin: 0 auto;
@@ -13,30 +13,40 @@ body{
 		width: 100%;
 	}
 	main {
+		align-items: stretch;
+		display: flex;
+		padding: 1% 10%;
+		justify-content: center;
+	}
+	#main-content {
 		border: 1px solid $skyblue;
-		min-height: 500px;
-		margin: 30px 25px;
-		padding: 2%;
+		margin: 0;
+		padding: 1%;
+	}
+	#side-content {
+		background-color: $greyshade3;
+		color: #fff;
+		padding: 1%;
 	}
 	footer {
 		text-align: center;
 	}
-	ul{
-		li{
+	ul {
+		li {
 			list-style-type: circle;
 			line-height: 2;
 		}
 	}
-	.no-display{
+	.no-display {
 		display: none;
 		width: remy(360px);
 	}
-	.block-display{
+	.block-display {
 		display: block;
 		@include testLoop(2);
 	}
 	@for $i from 1 through 3 {
-		.span-#{$i} {width: $i;}
+		.span-#{$i} { width: $i; }
 	}
 	@each $val in $arr {
 		.p-#{$val} { #{$colorVar}: grey; }
@@ -51,6 +61,25 @@ body{
 		p.sample-#{$key} {
 			#{$fontVar}-weight: bold;
 			@include setColor();
+		}
+	}
+
+	#flex-container {
+		border: 1px solid $orange;
+		/*flex-direction: row-reverse;
+		flex-wrap: wrap;*/
+		flex-flow: row-reverse wrap; /* flex-flow: <'flex-direction'> <'flex-wrap'> */
+		justify-content: center; /* flex-start | flex-end | center | space-between | space-around */
+		display: inline-flex; /* flex | inline-flex */
+		align-content: space-around; /* flex-start | flex-end | center | space-between | space-around | stretch */
+		height: 150px;
+		margin: 0 auto;
+		max-width: 1650px;
+		padding: 15px;
+		.flex-child {
+			border: 1px solid $skyblue;
+			padding: 10px;
+			margin-right: 2px;
 		}
 	}
 }
