@@ -64,6 +64,9 @@ body {
 		}
 	}
 
+	/*
+	** flex box properties
+	 */
 	#flex-container {
 		border: 1px solid $orange;
 		/*flex-direction: row-reverse;
@@ -81,5 +84,13 @@ body {
 			padding: 10px;
 			margin-right: 2px;
 		}
+	}
+
+	/*
+	** BEM properties /* block-name__element-name--modifier-name */
+	**
+	 */
+	.flex__flex-container--flex-upper-text {
+		display: block;
 	}
 }
